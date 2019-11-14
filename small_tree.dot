@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Uniformity of Cell Size <= 3.0\nmse = 0.2\nsamples = 13321\nvalue = 0.5"] ;
+1 [label="Clump Thickness <= 9.0\nmse = 0.0\nsamples = 6239\nvalue = 0.0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Bare Nuclei <= 9.8\nmse = 0.0\nsamples = 6238\nvalue = 0.0"] ;
+1 -> 2 ;
+3 [label="mse = 0.0\nsamples = 6235\nvalue = 0.0"] ;
+2 -> 3 ;
+4 [label="mse = 0.2\nsamples = 3\nvalue = 0.5"] ;
+2 -> 4 ;
+5 [label="mse = 0.0\nsamples = 1\nvalue = 1.0"] ;
+1 -> 5 ;
+6 [label="Uniformity of Cell Shape <= 3.0\nmse = 0.0\nsamples = 7082\nvalue = 1.0"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="Bland Chromatin <= 7.5\nmse = 0.0\nsamples = 143\nvalue = 0.0"] ;
+6 -> 7 ;
+8 [label="mse = 0.0\nsamples = 142\nvalue = 0.0"] ;
+7 -> 8 ;
+9 [label="mse = 0.0\nsamples = 1\nvalue = 1.0"] ;
+7 -> 9 ;
+10 [label="Uniformity of Cell Size <= 4.0\nmse = 0.0\nsamples = 6939\nvalue = 1.0"] ;
+6 -> 10 ;
+11 [label="mse = 0.2\nsamples = 586\nvalue = 0.7"] ;
+10 -> 11 ;
+12 [label="mse = 0.0\nsamples = 6353\nvalue = 1.0"] ;
+10 -> 12 ;
+}
